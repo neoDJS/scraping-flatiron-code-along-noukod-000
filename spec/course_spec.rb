@@ -36,7 +36,7 @@ describe "Course" do
         course_one = Course.new
         course_two = Course.new
         course_three = Course.new 
-        expect(Course.all).to match_array([course, course_one, course_two, course_three])
+        expect(Course.all).to match_array([course_one, course_two, course_three])
       end
     end
   end
