@@ -4,7 +4,6 @@ require 'open-uri'
 require_relative './course.rb'
 
 class Scraper
-  attr_accessor :doc
 
   def print_courses
     self.make_courses
@@ -18,10 +17,11 @@ class Scraper
   end
 
   def make_courses
+    
   end
 
   def get_courses
-    doc.css(".post")
+    self.get_page.css(".post")
   end
 
   def get_page
